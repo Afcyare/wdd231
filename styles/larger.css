@@ -1,0 +1,37 @@
+@media only screen and (min-width:38rem){
+    header,nav, main,footer{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    header{
+        grid-template-columns: 50px auto;
+        padding: 10px 20px;
+    }
+    header span {
+        font-size: 1.5rem;
+    }
+    nav{
+        display: block;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li{
+        border-bottom: none;
+    }
+
+    nav ul li a{
+        padding: 1rem 1.5rem;
+    }
+    .hamburger{
+        display: none;
+    }
+    main{
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .courses-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}

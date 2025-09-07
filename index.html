@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content=""WDD 231: Web Frontend Development I - Course Home Page created by Farhan A. Mohamud. Explore assignments, resources, and learning materials for Week 01.">
+    <meta name="author" content="Farhan A. Mohamud">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/script.js" defer></script>
+    <title>WDD 231 - Course Home Page | Farhan A. Mohamud</title>
 </head>
 <body>
-    <h1>hello welcome</h1>
+    <header>
+        <img src="images/home.svg" alt="svg logo" width="512" height="512">
+        <span>Farhan's site title</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+        
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+
+    <main>
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hello! My name is <strong>Farhan A. Mohamud</strong>. I am currently enrolled in 
+            <em>WDD 231: Web Frontend Development I</em>. I have a strong interest in web development 
+            and technology, and I am excited to expand my skills in HTML, CSS, and JavaScript 
+            throughout this course.</p>
+
+            <p>My goal is to become a professional software developer and to build practical, 
+            user-friendly applications. I enjoy learning by doing, and I believe that this course 
+            will help me improve both my technical knowledge and problem-solving skills.</p>
+
+            <p>Outside of coding, I enjoy spending time with family, exploring new ideas, and 
+            continuously challenging myself to grow personally and academically.</p>
+        </section>
+        <section class="student-photo">
+            <img src="images/profile.jpg" alt="a profile photo of Farhan A. Mohamud" width="450" height="450">
+        </section>
+        <section class="web-certificates">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-fill="all">All</button>
+                <button class="filter-btn" data-fill="CSE">CSE</button>
+                <button class="filter-btn" data-fill="WDD">WDD</button>
+            </div>
+            <p class="credit-total">The total credits for courses listed above is <span id="total-credits">0</span></p>
+            <div class="courses-countainer"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="linkedIn logo" width="50px" height="50"></a>
+            <a href="https://github.com/" target="_blank"><img src="images/github.png" alt="github logo" width="50" height="50"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="X logo" width="50" height="50"></a>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="currentYear"></span> | Farhan A. Mohamud | Kampala, Uganda</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
 </html>
