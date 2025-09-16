@@ -1,0 +1,73 @@
+[
+      {
+        "name": "Mukwano Group of Companies",
+        "address": "40/42 7th Street, Industrial Area, Kampala",
+        "phone": "+256 414 258 161",
+        "website": "https://www.mukwano.com",
+        "image": "images/mukwano.jpeg",
+        "membership": 3,
+        "category": "Manufacturing & FMCG",
+        "description": "Leading manufacturer of fast-moving consumer goods in Uganda"
+      },
+      {
+        "name": "DFCU Bank",
+        "address": "DFCU Tower, 26-28 Kampala Road, Kampala",
+        "phone": "+256 800 100 200",
+        "website": "https://www.dfcugroup.com",
+        "image": "images/dfcu.png",
+        "membership": 3,
+        "category": "Banking & Financial Services",
+        "description": "One of Uganda's leading commercial banks"
+      },
+      {
+        "name": "Roofings Group",
+        "address": "19-23 Plot 126, Nalukolongo, Kampala",
+        "phone": "+256 414 340 500",
+        "website": "https://www.roofingsgroup.com",
+        "image": "images/roofings.webp",
+        "membership": 2,
+        "category": "Manufacturing & Construction",
+        "description": "Leading steel and construction materials manufacturer"
+      },
+      {
+        "name": "Jesa Milk",
+        "address": "Plot 12 Dairy Road, Kampala",
+        "phone": "+256 414 300 123",
+        "website": "https://jesa.co.ug/",
+        "image": "images/jesa.png",
+        "membership": 2,
+        "category": "Dairy Products",
+        "description": "Jese Milk is a Ugandan dairy company providing fresh milk and milk products."
+},
+
+      {
+        "name": "Stanbic Bank Uganda",
+        "address": "5 Nile Avenue, Kampala Road, Kampala",
+        "phone": "+256 800 250 000",
+        "website": "https://www.stanbicbank.co.ug",
+        "image": "images/stanbic.webp",
+        "membership": 3,
+        "category": "Banking & Financial Services",
+        "description": "One of Uganda's largest commercial banks"
+      },
+      {
+        "name": "Jumia Uganda",
+        "address": "6 3rd Street, Industrial Area, Kampala",
+        "phone": "+256 700 111 111",
+        "website": "https://www.jumia.ug",
+        "image": "images/jumia.webp",
+        "membership": 2,
+        "category": "E-commerce & Retail",
+        "description": "Leading online shopping destination in Uganda"
+      },
+      {
+        "name": "Jumia Food Uganda",
+        "address": "8 5th Street, Industrial Area, Kampala",
+        "phone": "+256 700 222 222",
+        "website": "https://www.jumia.ug/food",
+        "image": "images/jumiafood.webp",
+        "membership": 1,
+        "category": "Food Delivery",
+        "description": "Food delivery service operating in Kampala"
+      }  
+    ]
