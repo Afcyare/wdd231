@@ -3,41 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Directory - Kampala Chamber of Commerce</title>
+  <title>Business Directory - Kampala Chamber of Commerce</title>
   <meta name="description" content="Discover local businesses in Kampala. Browse our member directory to find services and connect with the community.">
   <meta name="author" content="Marie Martinez">
   
-  <!-- Facebook Meta Tags -->
+  <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Kampala Chamber of Commerce Directory">
   <meta property="og:description" content="Discover local businesses in Kampala. Browse our member directory to find services and connect with the community.">
   <meta property="og:image" content="https://afcyare.github.io/wdd231/chamber/images/marketplace-store.svg">
   <meta property="og:url" content="https://afcyare.github.io/wdd231/chamber/directory.html">
   
+  <!-- Preload Critical Resources -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/directory.css">
-  <script src="scripts/script.js" defer></script>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/directory.css">
 </head>
 <body>
   <header>
     <div class="container">
       <div class="header-content">
         <div class="logo">
-          <img src="images/marketplace-store.svg" alt="svg logo">
+          <img src="images/marketplace-store.svg" alt="Kampala Chamber of Commerce Logo" width="50" height="50">
           <span>Kampala Chamber of Commerce</span>
         </div>
         
-        <button class="hamburger" id="hamburger">
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
           <span></span>
           <span></span>
           <span></span>
         </button>
         
-        <nav id="nav">
+        <nav id="nav" aria-label="Main navigation">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="directory.html" class="active">Directory</a></li>
@@ -45,26 +47,32 @@
             <li><a href="discover.html">Discover</a></li>
           </ul>
         </nav>
-        <button id="mode"><i class="fas fa-moon"></i> Dark Mode</button>
+        <button id="mode" aria-label="Toggle dark mode">
+          <span class="mode-icon">🌙</span> Dark Mode
+        </button>
       </div>
     </div>
   </header>
 
   <main class="container">
-    <h1 class="page-title">Business Directory</h1>
+    <h1>Business Directory</h1>
     
-    <div class="view-toggle">
-      <button id="gridViewBtn" class="active">&#9638; Grid View</button>
-      <button id="listViewBtn">  &#9776; List View</button>
+    <div class="view-toggle" aria-label="View toggle buttons">
+      <button id="gridViewBtn" class="active" aria-pressed="true">
+        <span aria-hidden="true">◼️</span> Grid View
+      </button>
+      <button id="listViewBtn" aria-pressed="false">
+        <span aria-hidden="true">☰</span> List View
+      </button>
     </div>
     
-    <div class="directory">
-      <div id="memberGrid" class="grid-view active">
-        <!-- Member cards will be inserted here by JavaScript -->
+    <div class="directory" role="region" aria-label="Business directory listings">
+      <div id="memberGrid" class="grid-view active" role="list">
+        <!-- Member cards populated by JavaScript -->
       </div>
       
-      <div id="memberList" class="list-view">
-        <!-- Member list items will be inserted here by JavaScript -->
+      <div id="memberList" class="list-view" role="list">
+        <!-- Member list items populated by JavaScript -->
       </div>
     </div>
   </main>
@@ -74,16 +82,26 @@
       <div class="footer-content">
         <div class="footer-info">
           <h3>Kampala Chamber of Commerce</h3>
-          <p>10 Kampala Road</p>
-          <p>Kampala, Uganda</p>
-          <p>info@kampalacc.org</p>
-          <p>(256) 555-2300</p>
+          <address>
+            <p>10 Kampala Road</p>
+            <p>Kampala, Uganda</p>
+            <p><a href="mailto:info@kampalacc.org">info@kampalacc.org</a></p>
+            <p><a href="tel:+2565552300">(256) 555-2300</a></p>
+          </address>
         </div>
-         <div class="social">
-            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="linkedIn logo" width="50" height="50"></a>
-            <a href="https://github.com/" target="_blank"><img src="images/github.png" alt="github logo" width="50" height="50"></a>
-            <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="Twitter (X) logo" width="50" height="50"></a>
+        
+        <div class="social">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="images/linkedin.png" alt="LinkedIn logo" width="40" height="40">
+          </a>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <img src="images/github.png" alt="GitHub logo" width="40" height="40">
+          </a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <img src="images/twitter.png" alt="Twitter logo" width="40" height="40">
+          </a>
         </div>
+        
         <div class="footer-info">
           <h3>WDD231 Chamber Directory Page</h3>
           <p>Farhan Abdi Mohamud</p>
@@ -96,6 +114,8 @@
         <p>&copy; <span id="copyrightYear"></span> Kampala Chamber of Commerce. All rights reserved.</p>
       </div>
     </div>
-  </footer> 
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
 </body>
 </html>
