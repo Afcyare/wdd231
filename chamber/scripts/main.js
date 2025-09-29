@@ -358,3 +358,42 @@ document.addEventListener('DOMContentLoaded', () => {
     weatherManager.init();
     spotlightManager.init();
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  // 1️⃣ Fill hidden timestamp
+  const timeField = document.getElementById("date"); // match your HTML
+  if (timeField) {
+    timeField.value = new Date().toISOString();
+  }
+
+  // 2️⃣ Membership modals
+  const memberships = ["np", "bronze", "silver", "gold"];
+
+  memberships.forEach(level => {
+    const button = document.getElementById(level);
+    const modal = document.getElementById(`${level}Modal`);
+    const closeBtn = modal?.querySelector(".close");
+
+    if (button && modal && closeBtn) {
+      button.addEventListener("click", () => modal.showModal());
+      closeBtn.addEventListener("click", () => modal.close());
+    }
+  });
+
+  // 3️⃣ Display thank-you info (if on thankyou.html)
+  const result = document.getElementById("results");
+  if (result) {
+    const myInfo = new URLSearchParams(window.location.search);
+    result.innerHTML = `
+      <p>Thank you, <strong>${myInfo.get("fname")} ${myInfo.get("lname")}</strong>!</p>
+      <p>Email: ${myInfo.get("email")}</p>
+      <p>Phone: ${myInfo.get("tel")}</p>
+      <p>Organization: ${myInfo.get("org")}</p>
+      <p>Membership Level: ${myInfo.get("membership")}</p>
+      <p>Submitted on: ${myInfo.get("date")}</p>
+    `;
+  }
+});
+
