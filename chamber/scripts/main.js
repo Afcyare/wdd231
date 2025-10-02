@@ -397,3 +397,74 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+
+async function fetdata() {
+    try {
+        const response = await fetch("data/interestAreas.json");
+        const data = await response.json();
+        showdata(data);
+    } catch (error) {
+        console.error(error);
+    }
+}
+fetdata();
+
+function showdata(data) {
+    // Target the parent section instead of one card
+    const section = document.querySelector(".discover section");
+    section.innerHTML = ""; // clear everything first
+
+    data.forEach(el => {
+        // Create card
+        const card = document.createElement("div");
+        card.classList.add("discoverCard");
+
+        card.innerHTML = `
+            <h2>${el.name}</h2>
+            <figure>
+                <img src="${el.image}" width="300" height="200" alt="${el.name}" loading="lazy">
+            </figure>
+            <div class="info">
+                <div class="content">
+                    <p>${el.description}</p>
+                    <address>${el.address}</address>
+                </div>
+            </div>
+            <a href="#">Learn More</a>
+        `;
+
+        section.appendChild(card);
+    });
+}
+
+
+// Select the message area
+const messageEl = document.getElementById("visit-message");
+
+// Get the last visit timestamp from localStorage (if any)
+const lastVisit = localStorage.getItem("lastVisit");
+const now = Date.now();
+  const diffMs = now - parseInt(lastVisit, 10);
+console.log(lastVisit);
+console.log(now);
+console.log(diffMs);
+
+if (!lastVisit) {
+    // first time visit
+    messageEl.textContent = "Welcome! Let us know if you have any questions.";
+} else {
+    // calculate different in days
+    const diffMs = now - parseInt(lastVisit, 10);
+    const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+    if (diffDays < 1) {
+        messageEl.textContent = "Back so soon! Awesome!";
+    } else if (diffDays === 1) {
+         messageEl.textContent = "You last visited 1 day ago.";
+    } else {
+         messageEl.textContent = `You last visited ${diffDays} days ago.`;
+    }
+}
+
+ // Store the current visit time for next time
+localStorage.setItem("lastVisit", now);

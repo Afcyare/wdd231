@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Laas Geel Cave Paintings",
+    "address": "Near Hargeisa, Somaliland, Somalia",
+    "description": "A stunning set of rock art shelters and cave paintings dating from about 5,000–11,000 years ago, depicting cattle, humans, and other symbols. One of the best preserved prehistoric art sites in the Horn of Africa.",
+    "image": "images/laas_geel.webp"
+  },
+  {
+    "id": 2,
+    "name": "Dhambalin Rock Art Site",
+    "address": "Togdheer region, Somaliland, Somalia",
+    "description": "An archaeological rock shelter site with polychrome paintings (5,000–3,000 BC) showing animals and humans; important for understanding early pastoral societies in Somalia.",
+    "image": "images/dhambalin.webp"
+  },
+  {
+    "id": 3,
+    "name": "Mogadishu Lighthouse (Al-Munaara)",
+    "address": "Old Harbour, Mogadishu, Banaadir, Somalia",
+    "description": "A colonial-era lighthouse built in the 1920s–30s, now partially collapsed but still a symbol of Mogadishu’s maritime legacy. Restoration efforts are underway.",
+    "image": "images/mogadishu_lighthouse.webp"
+  },
+  {
+    "id": 4,
+    "name": "Fakhr al-Din Mosque",
+    "address": "Hamar Weyne District, Mogadishu, Banaadir, Somalia",
+    "description": "One of Mogadishu’s oldest mosques, built in 1269 CE, featuring compact design, domed mihrab, and historic inscriptions.",
+    "image": "images/fakhr_al_din_mosque.webp"
+  },
+  {
+    "id": 5,
+    "name": "Jazeera Beach (Xeebta Jasiira)",
+    "address": "Mogadishu, Banaadir, Somalia (coastline)",
+    "description": "A coastal beach in Mogadishu on the Indian Ocean. It is a leisure destination where locals gather, and features a small island reachable by boat; also site of the historic Jazeera massacre (1989).",
+    "image": "images/jazeera_beach.webp"
+  },
+  {
+    "id": 6,
+    "name": "Gondershe (Gendershe) Ruins",
+    "address": "Lower Shabelle Region, Somalia (about 35 km northeast of Merca)",
+    "description": "An ancient stone town on a coastal promontory. The ruins include coral stone houses, fortifications, mosques, and a shrine, reflecting medieval trade and archaeological significance.",
+    "image": "images/gondershe.webp"
+  },
+  {
+    "id": 7,
+    "name": "Zeila Archipelago / Sa’ad ad-Din Islands",
+    "address": "Off the coast of Zeila, Awdal region, Somaliland, Somalia",
+    "description": "A chain of six small islands off Zeila, known for coral reefs, marine biodiversity, and a lighthouse on Aibat Island.",
+    "image": "images/zeila_archipelago.webp"
+  },
+  {
+    "id": 8,
+    "name": "Mogadishu Cathedral (Ruins of Cathedral of Our Lady of the Assumption)",
+    "address": "Mogadishu, Banaadir, Somalia",
+    "description": "Built in 1928 during the Italian colonial era, this cathedral is now in ruins following civil war damage. It remains a powerful symbol of the colonial past and attempts at restoration.",
+    "image": "images/mogadishu_cathedral.webp"
+  }
+]

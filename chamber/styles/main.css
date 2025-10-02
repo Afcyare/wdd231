@@ -8,7 +8,7 @@
   --background: #F8F9FA;
   --card-bg: #FFFFFF;
   --border: #DEE2E6;
-  --shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   --radius: 8px;
   --transition: all 0.3s ease;
 }
@@ -22,7 +22,7 @@
   --background: #1A2B3C;
   --card-bg: #2A3B4C;
   --border: #3D5A80;
-  --shadow: 0 2px 8px rgba(0,0,0,0.4);
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* ===== Base Styles ===== */
@@ -195,8 +195,8 @@ main h1 {
 
 /* ===== Hero Section ===== */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-              url("../images/kamapla.jpg") center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/kamapla.jpg") center/cover;
   padding: 4rem 2rem;
   border-radius: var(--radius);
   margin-bottom: 2rem;
@@ -220,12 +220,14 @@ main h1 {
   margin-bottom: 2rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
-.weather-grid{
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    gap: 2rem;
-    
+
+.weather-grid {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 2rem;
+
 }
+
 /* ===== Card Styles ===== */
 .events,
 .current-weather,
@@ -443,40 +445,42 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-  .weather-grid{
+
+  .weather-grid {
     grid-template-columns: 1fr;
   }
+
   nav ul {
     flex-direction: column;
     gap: 0.5rem;
   }
-  
+
   .hamburger {
     display: flex;
   }
-  
+
   nav {
     display: none;
     width: 100%;
   }
-  
+
   nav.active {
     display: block;
   }
-  
+
   .hero {
     padding: 2rem 1rem;
   }
-  
+
   .hero-content h2 {
     font-size: 2rem;
   }
-  
+
   .footer-content {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  
+
   .spotlights-grid {
     grid-template-columns: 1fr;
   }
@@ -486,19 +490,19 @@ footer {
   .container {
     padding: 0 0.5rem;
   }
-  
+
   .hero-content h2 {
     font-size: 1.5rem;
   }
-  
+
   .hero-content p {
     font-size: 1rem;
   }
-  
+
   .spotlight-card {
     padding: 1rem;
   }
-  
+
   .spotlight-image {
     width: 80px;
     height: 80px;
@@ -506,23 +510,24 @@ footer {
 }
 
 
-.joincontainer{
+.joincontainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(375px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
   max-width: 1200px;
   margin: 0 auto;
   gap: 1rem;
 }
 
-.joincontainer h1{
+.joincontainer h1 {
   margin-bottom: 20px;
-  grid-column:  1/-1;
+  grid-column: 1/-1;
 }
 
 
-label{
+label {
   display: block;
 }
+
 input[type=text],
 input[type=email],
 input[type=tel] {
@@ -533,7 +538,8 @@ input[type=tel] {
   font-size: 1.3rem;
   font-family: 'Roboto', sans-serif;
   transition: border-left-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  background-color: #fff; /* default background */
+  background-color: #fff;
+  /* default background */
 }
 
 /* Validation feedback */
@@ -541,22 +547,26 @@ input[type=text]:valid,
 input[type=email]:valid,
 input[type=tel]:valid {
   border-left-color: green;
-  background-color: #e6ffe6; /* subtle light green */
+  background-color: #e6ffe6;
+  /* subtle light green */
 }
 
 input[type=text]:invalid,
 input[type=email]:invalid,
 input[type=tel]:invalid {
   border-left-color: red;
-  background-color: #ffe6e6; /* subtle light red */
+  background-color: #ffe6e6;
+  /* subtle light red */
 }
 
 /* Focus state */
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=tel]:focus {
-  outline: none; /* remove default outline */
-  border-left-color: #054226; /* match your theme */
+  outline: none;
+  /* remove default outline */
+  border-left-color: #054226;
+  /* match your theme */
   box-shadow: 0 0 5px rgba(5, 66, 38, 0.3);
 }
 
@@ -573,10 +583,11 @@ input::placeholder {
   font-size: 1.2rem;
   border: 2px solid #ccc;
   border-radius: 8px;
-  resize: vertical; /* allow vertical resizing only */
+  resize: vertical;
+  /* allow vertical resizing only */
   font-family: 'Roboto', sans-serif;
   margin-bottom: 1.5rem;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -586,14 +597,16 @@ input::placeholder {
   outline: none;
 }
 
-fieldset{
+fieldset {
   border: none;
 }
-legend{
+
+legend {
   font-size: 2rem;
 }
-.membership h2{
-margin-bottom: 0.5rem;
+
+.membership h2 {
+  margin-bottom: 0.5rem;
 }
 
 #btn {
@@ -618,7 +631,7 @@ margin-bottom: 0.5rem;
   transform: translateY(0);
 }
 
-.card{
+.card {
   background-color: #054226;
   color: #c6bcbc;
   padding: 2rem;
@@ -627,10 +640,12 @@ margin-bottom: 0.5rem;
   border-radius: 5px;
   border-bottom-left-radius: 30px;
 }
-.card h3{
+
+.card h3 {
   margin-bottom: 0.5rem;
 }
-.learn{
+
+.learn {
   padding: 0.5rem;
   cursor: pointer;
 }
@@ -694,8 +709,13 @@ dialog::backdrop {
 }
 
 @keyframes fadeInBackdrop {
-  from { background: rgba(0,0,0,0); }
-  to { background: rgba(0,0,0,0.5); }
+  from {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  to {
+    background: rgba(0, 0, 0, 0.5);
+  }
 }
 
 /* ----------------- THANK-YOU PAGE STYLES ----------------- */
@@ -724,4 +744,148 @@ dialog::backdrop {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeUp 1s ease forwards;
+}
+
+
+/* Discover wrapper */
+.discover {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.discover h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #076239;
+}
+
+.discover section {
+  display: grid;
+  gap: 2rem;
+}
+
+/* Base discoverCard */
+.discoverCard {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discoverCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Assign areas */
+.discoverCard>h2 {
+  grid-area: title;
+  color: #076239;
+  margin-bottom: 0.5rem;
+}
+
+.discoverCard>figure {
+  grid-area: image;
+  margin: 0;
+}
+
+.discoverCard>.info {
+  grid-area: info;
+}
+
+.discoverCard a {
+  grid-area: link;
+  background-color: #076239;
+  color: #fff;
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.discoverCard a:hover {
+  background-color: #054327;
+}
+
+.discoverCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+address {
+  font-style: normal;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+#sidebar {
+  background: #f0f9ff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid #076239;
+  border-radius: 6px;
+}
+
+
+/* 📱 Small screens (320px–640px) → stacked */
+@media screen and (max-width: 640px) {
+  .discoverCard {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "image"
+      "info"
+      "link";
+  }
+}
+
+/* 💻 Medium screens (641px–1024px) → image left, info right */
+@media screen and (min-width: 641px) {
+  .discover section {
+    grid-template-columns: 1fr;
+  }
+
+  .discoverCard {
+    grid-template-columns: 300px 1fr;
+    grid-template-areas:
+      "title title"
+      "image info"
+      "link link";
+  }
+
+   .discoverCard img:hover {
+    transform: scale(1.05);           /* slightly zoom in */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* subtle shadow */
+    cursor: pointer;                  /* shows pointer for interactivity */
+  }
+}
+
+/* 🖥️ Large screens (1025px and above) → fixed image column, flexible info */
+@media screen and (min-width: 1025px) {
+  .discover section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .discoverCard {
+    grid-template-columns: 300px 1fr;
+    grid-template-areas:
+      "title title"
+      "image info"
+      "link link";
+  }
 }
